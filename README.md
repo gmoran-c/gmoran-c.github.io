@@ -1,23 +1,23 @@
-# 👤 Tu Nombre — Portfolio
+# 👤 gmoran-c — Portfolio
 
-Sitio web personal donde muestro mis proyectos, habilidades y experiencia
-en ingeniería informática y ciberseguridad.
+Personal website showcasing my projects, skills and experience
+in computer engineering and cybersecurity.
 
-🌐 **Live:** https://tu-usuario.github.io
+🌐 **Live:** https://gmoran-c.github.io
 
 ---
 
-## 🛠️ Tecnologías usadas
+## 🛠️ Built With
 
 - HTML5, CSS3, JavaScript
-- [cualquier librería que uses, ej: Font Awesome, AOS.js]
+- Font Awesome, AOS.js
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Project Structure
 
 ​```
-tu-usuario.github.io/
+gmoran-c.github.io/
 ├── index.html
 ├── style.css
 ├── main.js
@@ -28,16 +28,16 @@ tu-usuario.github.io/
 
 ---
 
-## 📌 Secciones
+## 📌 Sections
 
-- Sobre mí
+- About Me
 - Skills
-- Proyectos
-- Educación & Certificaciones
-- Contacto
+- Projects
+- Education & Certifications
+- Contact
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-This project is licensed under the MIT License - see th [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
