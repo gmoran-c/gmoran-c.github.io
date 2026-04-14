@@ -1,4 +1,4 @@
-# 👤 gmoran-c — Portfolio
+# 👤 Gabriel Morán — Portfolio
 
 Personal website showcasing my projects, skills and experience
 in computer engineering and cybersecurity.
