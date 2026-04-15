@@ -1,66 +1,24 @@
 // ==========================================
-// TERMINAL & UI JAVASCRIPT
+// PREMIUM PORTFOLIO JAVASCRIPT
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Boot Sequence Logic
-    const bootContainer = document.getElementById('boot-container');
-    const bootScreen = document.getElementById('boot-screen');
-    const mainContent = document.getElementById('main-content');
-    
-    const bootMessages = [
-        "INIT: version 2.88 booting...",
-        "Loading cryptographic modules... [ OK ]",
-        "Mounting virtual file systems... [ OK ]",
-        "Starting network interface... [ OK ]",
-        "Establishing secure connection to mainframe...",
-        "Bypassing firewall protocols... [ SUCCESS ]",
-        "Authenticating user 'gmoran-c'...",
-        "SECURITY CLEARANCE: LEVEL 5 VERIFIED.",
-        "ACCESS GRANTED.",
-        "Initializing interface..."
-    ];
-
-    let msgIndex = 0;
-    
-    function printBootMessage() {
-        if (msgIndex < bootMessages.length) {
-            bootContainer.innerHTML += `> ${bootMessages[msgIndex]}<br>`;
-            msgIndex++;
-            // Random delay between 100ms and 400ms to simulate varied loading speeds
-            const delay = Math.random() * 300 + 100;
-            setTimeout(printBootMessage, delay);
-        } else {
-            // Once finished, wait a moment then swap screens
-            setTimeout(() => {
-                bootScreen.style.opacity = '0';
-                bootScreen.style.transition = 'opacity 0.5s ease-out';
-                
-                setTimeout(() => {
-                    bootScreen.style.display = 'none';
-                    mainContent.style.display = 'block';
-                    // Trigger fade in
-                    setTimeout(() => {
-                        mainContent.style.opacity = '1';
-                        mainContent.style.transition = 'opacity 1s ease-in';
-                        startTypewriter(); // Start hero typing after boot
-                    }, 50);
-                }, 500);
-                
-            }, 800);
-        }
-    }
-    
-    // Start boot sequence
-    setTimeout(printBootMessage, 500);
+    // 1. Initialize AOS (Animate On Scroll)
+    // Using subtle, smooth easing for a premium feel
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 50
+    });
 
     // 2. Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    if(hamburger) {
+    if (hamburger) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
@@ -72,18 +30,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }));
     }
 
-    // 3. Typewriter Effect for Hero Section
+    // 3. Navbar Glassmorphism Scroll Effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.padding = '0.8rem 0';
+            navbar.style.background = 'rgba(10, 10, 12, 0.85)';
+            navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+        } else {
+            navbar.style.padding = '1.2rem 0';
+            navbar.style.background = 'rgba(10, 10, 12, 0.7)';
+            navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.08)';
+        }
+    });
+
+    // 4. Clean Typewriter Effect for Hero Section
     function startTypewriter() {
         const typeWriterElement = document.getElementById('typewriter');
         if (!typeWriterElement) return;
         
         const words = [
-            "SYSTEM_ARCHITECT",
-            "SECURITY_RESEARCHER",
-            "PENETRATION_TESTER"
+            "System Architecture.",
+            "Cybersecurity.",
+            "Software Engineering."
         ];
         
-        let wait = 2000;
+        let wait = 2500;
         let wordIndex = 0;
         let isDeleting = false;
         let txt = '';
@@ -100,35 +72,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             typeWriterElement.innerHTML = txt;
 
-            let typeSpeed = 80;
+            let typeSpeed = 60; // Snappy typing
 
             if (isDeleting) {
-                typeSpeed /= 2;
+                typeSpeed /= 2; // Fast deletion
             }
 
             if (!isDeleting && txt === fullTxt) {
-                typeSpeed = wait;
+                typeSpeed = wait; // Wait at end of word
                 isDeleting = true;
             } else if (isDeleting && txt === '') {
                 isDeleting = false;
                 wordIndex++;
-                typeSpeed = 300;
+                typeSpeed = 400; // Pause before new word
             }
 
             setTimeout(type, typeSpeed);
         }
         
-        type();
+        // Start typing after initial load
+        setTimeout(type, 1500); 
     }
     
-    // 4. Active Link Highlighting on Scroll
+    startTypewriter();
+
+    // 5. Active Link Highlighting on Scroll
     const sections = document.querySelectorAll('section');
     
     window.addEventListener('scroll', () => {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (scrollY >= (sectionTop - 200)) {
+            if (scrollY >= (sectionTop - 250)) {
                 current = section.getAttribute('id');
             }
         });
