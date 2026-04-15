@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSIFIED | Gabriel Morán</title>
+    <meta name="description" content="Classified Dossier of Gabriel Morán, Computer Engineering and Cybersecurity.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Terminal Boot Sequence Overlay -->
+    <div id="boot-screen">
+        <div class="boot-text-container" id="boot-container">
+            <!-- JavaScript will populate this -->
+        </div>
+        <div class="cursor blink">_</div>
+    </div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" style="display: none; opacity: 0;">
+        
+        <!-- CRT Effects overlay -->
+        <div class="scanlines"></div>
+        <div class="crt-flicker"></div>
+
+        <!-- Navigation -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    [SYS.ADMIN_GM]
+                </a>
+                <div class="nav-menu">
+                    <a href="#about" class="nav-link">> DOSSIER</a>
+                    <a href="#skills" class="nav-link">> CAPABILITIES</a>
+                    <a href="#projects" class="nav-link">> OPS</a>
+                    <a href="#education" class="nav-link">> TRAINING</a>
+                    <a href="#contact" class="nav-link">> COMMS</a>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="section-container">
+                <div class="hero-content">
+                    <h3 class="sys-msg">STATUS: <span class="text-accent">ONLINE</span></h3>
+                    <h1 class="hero-name">GABRIEL MORÁN</h1>
+                    <h2 class="hero-title">
+                        <span id="typewriter"></span><span class="cursor">_</span>
+                    </h2>
+                    <p class="hero-description">
+                        SECURITY CLEARANCE: LEVEL 5<br>
+                        SPECIALIZATION: <span class="redacted">SYSTEM ARCHITECTURE</span> & NETWORK DEFENSE<br>
+                        WARNING: UNAUTHORIZED ACCESS TO THIS TERMINAL WILL BE LOGGED AND REPORTED.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">[ INITIATE_COMMS ]</a>
+                        <a href="assets/cv/cv-gmoran-c.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> EXTRACT_FILES.PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-graphic">
+                    <pre class="ascii-art text-accent">
+       .
+      / \
+     /   \
+    /     \
+   /       \
+  /_________\
+  |         |
+  |  [CIA]  |
+  |   SYS   |
+  |_________|
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Dossier) -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">[ OPERATIVE_DOSSIER ]</h2>
+                <div class="about-content border-box">
+                    <div class="about-text">
+                        <p>
+                            > TARGET ID: G. MORÁN<br>
+                            > BACKGROUND: COMPUTER ENGINEERING / CYBERSECURITY
+                        </p>
+                        <br>
+                        <p>
+                            SUBJECT is currently engaged in advanced technical operations involving <span class="redacted">infrastructure security</span> and proactive threat mitigation. Track record indicates high proficiency in analyzing cryptographic protocols and participating in <span class="text-accent">Capture The Flag (CTF)</span> simulations under high pressure.
+                        </p>
+                        <p>
+                            KNOWN MODUS OPERANDI: Constructing robust defense mechanisms while actively identifying vulnerabilities in existing deployment architectures. SUBJECT believes that true innovation emerges from the intersection of functional engineering and <span class="redacted">classified security</span> doctrines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <h2 class="section-title">[ KNOWN_CAPABILITIES ]</h2>
+                
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category border-box">
+                        <h3 class="category-title"><i class="fas fa-terminal"></i> LINGUISTICS</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JS/HTML/CSS</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Bash/Zsh</span>
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Cybersecurity -->
+                    <div class="skill-category border-box">
+                        <h3 class="category-title"><i class="fas fa-shield-alt"></i> TACTICS</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Network Defense</span>
+                            <span class="skill-tag">Cryptography</span>
+                            <span class="skill-tag">Threat Intel</span>
+                            <span class="skill-tag">Unix/Linux Admin</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category border-box">
+                        <h3 class="category-title"><i class="fas fa-wrench"></i> EQUIPMENT</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">Nmap</span>
+                            <span class="skill-tag">Burp Suite</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <h2 class="section-title">[ CLASSIFIED_OPERATIONS ]</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card border-box">
+                        <div class="project-header">
+                            <span class="clearance-level text-accent">LEVEL 3 SECRET</span>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">OP: NETWORK_SCANNER</h3>
+                        <p class="project-desc">
+                            Deployment of a lightweight Python recon tool. Discovers active network segments and extracts port telemetry for rapid vulnerability identification.
+                        </p>
+                        <div class="project-tech">
+                            <span>> Python</span>
+                            <span>> Scapy</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card border-box">
+                        <div class="project-header">
+                            <span class="clearance-level text-accent">TOP SECRET</span>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">OP: FILE_ENCRYPTOR</h3>
+                        <p class="project-desc">
+                            Implementation of AES-256 cryptographic standards to lock down sensitive dossiers locally. Ensures no unauthorized data exfiltration.
+                        </p>
+                        <div class="project-tech">
+                            <span>> Java</span>
+                            <span>> Cryptography</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card border-box">
+                        <div class="project-header">
+                            <span class="clearance-level text-accent">UNCLASSIFIED</span>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">OP: PORTFOLIO_SYS</h3>
+                        <p class="project-desc">
+                            Construction of a secure, terminal-based digital footprint to interact with external recruiters without exposing critical internal infrastructure.
+                        </p>
+                        <div class="project-tech">
+                            <span>> HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="more-projects">
+                    <a href="https://github.com/gmoran-c" target="_blank" class="btn btn-primary">
+                        [ ACCESS_ARCHIVES_GITHUB ]
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-container">
+                <h2 class="section-title">[ TRAINING_HISTORY ]</h2>
+                
+                <div class="timeline border-box">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">STATUS: ACTIVE</span>
+                            <h3 class="timeline-title">B.S. Computer Engineering</h3>
+                            <p class="timeline-institution">University Name</p>
+                            <p class="timeline-desc">Specialized training in system architecture, algorithmic logic, and secure software development methodologies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">LOG: 2023</span>
+                            <h3 class="timeline-title">Cybersecurity Foundations</h3>
+                            <p class="timeline-institution">External Cert Auth</p>
+                            <p class="timeline-desc">Completed intense simulated training covering core network security and foundational cryptography.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <h2 class="section-title">[ OPEN_COMMS ]</h2>
+                <div class="contact-wrapper border-box">
+                    <div class="contact-info">
+                        <p class="contact-desc">
+                            > SECURE CHANNELS ARE OPEN.<br>
+                            > AWAITING TRANSMISSION FOR NEW ASSIGNMENTS OR COLLABORATIONS.
+                        </p>
+                        <div class="contact-links">
+                            <a href="mailto:your.email@example.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>[ DIRECT_EMAIL ]</span>
+                            </a>
+                            <a href="https://github.com/gmoran-c" target="_blank" class="contact-link">
+                                <i class="fab fa-github"></i>
+                                <span>[ GITHUB_REPO ]</span>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>[ LINKEDIN_NETWORK ]</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <p>SYS.DEV: <span class="text-accent">G. MORÁN</span></p>
+                <div class="footer-socials">
+                    <a href="https://github.com/gmoran-c" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">END OF FILE. // 2026</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
