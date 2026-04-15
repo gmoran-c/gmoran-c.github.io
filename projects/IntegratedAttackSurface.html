@@ -24,7 +24,10 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="../index.html" class="logo"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <a href="../index.html" class="logo" data-en="<i class='fas fa-arrow-left'></i> Back to Portfolio" data-es="<i class='fas fa-arrow-left'></i> Volver al Portafolio"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <div class="nav-menu" style="margin-left: auto;">
+                <button id="lang-toggle" class="btn btn-secondary">EN / ES</button>
+            </div>
         </div>
     </nav>
 
@@ -34,9 +37,9 @@
         <div class="section-container">
             <div class="hero-content" style="text-align: center;">
                 <h1 class="hero-name" data-aos="fade-up" style="font-size: 3.5rem;">Integrated Attack Surface</h1>
-                <h2 class="hero-title" data-aos="fade-up" data-aos-delay="100" style="color: var(--accent);">Unified OSINT & Vulnerability Mapping</h2>
+                <h2 class="hero-title" data-aos="fade-up" data-aos-delay="100" style="color: var(--accent);" data-en="Unified OSINT & Vulnerability Mapping" data-es="OSINT Unificado y Mapeo de Vulnerabilidades">Unified OSINT & Vulnerability Mapping</h2>
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="200" style="justify-content: center;">
-                    <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> View Repository</a>
+                    <a href="#" class="btn btn-primary" data-en="<i class='fab fa-github'></i> View Repository" data-es="<i class='fab fa-github'></i> Ver Repositorio"><i class="fab fa-github"></i> View Repository</a>
                 </div>
             </div>
         </div>
@@ -45,13 +48,15 @@
     <!-- Overview Section -->
     <section class="section bg-alt" style="padding: 80px 0;">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;">Project Overview</h2>
+            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;" data-en="Project Overview" data-es="Resumen del Proyecto">Project Overview</h2>
             <div class="about-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: left;">
                 <div class="about-text" data-aos="fade-up" data-aos-delay="100">
-                    <p>
+                    <p data-en="<strong>IntegratedAttackSurface</strong> is an actively developing security research project aimed at building a unified platform for infrastructure reconnaissance and threat mapping. Drawing from core principles in my CompTIA Security+ studies, this tool is designed to automate the initial discovery phases of penetration testing."
+                       data-es="<strong>IntegratedAttackSurface</strong> es un proyecto de investigación activo destinado a construir una plataforma unificada para el mapeo de amenazas y reconocimiento de infraestructura. Basado en los principios de mis estudios para CompTIA Security+, automatiza las fases iniciales del pentesting.">
                         <strong>IntegratedAttackSurface</strong> is an actively developing security research project aimed at building a unified platform for infrastructure reconnaissance and threat mapping. Drawing from core principles in my CompTIA Security+ studies, this tool is designed to automate the initial discovery phases of penetration testing.
                     </p>
-                    <p>
+                    <p data-en="By combining Open Source Intelligence (OSINT) gathering, active port scanning, and CVE database cross-referencing, the platform provides administrators and offensive security researchers with a clear, topological view of exposed assets and critical vulnerabilities before threat actors can exploit them."
+                       data-es="Al combinar OSINT (Inteligencia de Fuentes Abiertas), escaneo activo de puertos y referencias cruzadas con bases de datos CVE, la plataforma proporciona a los administradores una visión clara y topológica de los activos expuestos antes de que puedan ser explotados.">
                         By combining Open Source Intelligence (OSINT) gathering, active port scanning, and CVE database cross-referencing, the platform provides administrators and offensive security researchers with a clear, topological view of exposed assets and critical vulnerabilities before threat actors can exploit them.
                     </p>
                 </div>
@@ -62,35 +67,26 @@
     <!-- Tech Stack -->
     <section class="section" style="padding: 80px 0;">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;">Core Features</h2>
+            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;" data-en="Core Features" data-es="Características Clave">Core Features</h2>
             <div class="skills-wrapper" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
                 
                 <div class="info-card" data-aos="zoom-in" data-aos-delay="100" style="text-align: center;">
                     <div class="icon-wrapper" style="margin: 0 auto 1rem auto;"><i class="fas fa-network-wired"></i></div>
-                    <h3>Reconnaissance</h3>
-                    <p style="margin-top: 10px;">Automated subdomain enumeration and port scanning integration.</p>
+                    <h3 data-en="Reconnaissance" data-es="Reconocimiento">Reconnaissance</h3>
+                    <p style="margin-top: 10px;" data-en="Automated subdomain enumeration and port scanning integration." data-es="Enumeración automatizada de subdominios e integración rápida de escaneo de puertos.">Automated subdomain enumeration and port scanning integration.</p>
                 </div>
 
                 <div class="info-card" data-aos="zoom-in" data-aos-delay="200" style="text-align: center;">
                     <div class="icon-wrapper" style="margin: 0 auto 1rem auto;"><i class="fas fa-shield-virus"></i></div>
-                    <h3>Vuln Analysis</h3>
-                    <p style="margin-top: 10px;">Cross-checks identified services with known CVE databases.</p>
+                    <h3 data-en="Vuln Analysis" data-es="Análisis de Vulnerabilidades">Vuln Analysis</h3>
+                    <p style="margin-top: 10px;" data-en="Cross-checks identified services with known CVE databases." data-es="Comprobación cruzada de los servicios identificados con bases de datos CVE conocidas.">Cross-checks identified services with known CVE databases.</p>
                 </div>
 
                 <div class="info-card" data-aos="zoom-in" data-aos-delay="300" style="text-align: center;">
                     <div class="icon-wrapper" style="margin: 0 auto 1rem auto;"><i class="fas fa-chart-line"></i></div>
-                    <h3>Reporting</h3>
-                    <p style="margin-top: 10px;">Generates actionable JSON and CLI reports for threat mitigation.</p>
+                    <h3 data-en="Reporting" data-es="Informes">Reporting</h3>
+                    <p style="margin-top: 10px;" data-en="Generates actionable JSON and CLI reports for threat mitigation." data-es="Genera informes accionables en JSON y CLI para la mitigación de amenazas.">Generates actionable JSON and CLI reports for threat mitigation.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Image Placeholder -->
-    <section class="section bg-alt" style="padding: 80px 0;">
-        <div class="section-container">
-            <div data-aos="fade-up" style="width: 100%; height: 400px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--radius-soft); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
-                <i class="fas fa-spider fa-3x" style="margin-right: 15px;"></i> Placeholder for Threat Graph
             </div>
         </div>
     </section>
@@ -98,14 +94,16 @@
     <!-- Footer -->
     <footer>
         <div class="section-container">
-            <p>Designed and Built by <strong>Gabriel Morán</strong></p>
+            <p data-en="Designed and Built by <strong>Gabriel Morán</strong>" data-es="Diseñado y Desarrollado por <strong>Gabriel Morán</strong>">Designed and Built by <strong>Gabriel Morán</strong></p>
         </div>
     </footer>
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            if(!window.AOS) return;
             AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
         });
     </script>

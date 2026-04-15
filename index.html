@@ -27,11 +27,12 @@
         <div class="nav-container">
             <a href="#home" class="logo">Gabriel Morán</a>
             <div class="nav-menu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#about" class="nav-link" data-en="About" data-es="Sobre mí">About</a>
+                <a href="#skills" class="nav-link" data-en="Skills" data-es="Habilidades">Skills</a>
+                <a href="#projects" class="nav-link" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="#education" class="nav-link" data-en="Education" data-es="Educación">Education</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+                <button id="lang-toggle" class="btn btn-secondary">EN / ES</button>
             </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -48,12 +49,14 @@
                 <h2 class="hero-title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                     <span id="typewriter"></span><span class="cursor">|</span>
                 </h2>
-                <p class="hero-description" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                <p class="hero-description" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"
+                   data-en="Crafting secure, scalable architectures and exploring the frontiers of network defense. Welcome to my professional portfolio."
+                   data-es="Creando arquitecturas seguras y escalables, y explorando las fronteras de la defensa de redes. Bienvenido a mi portafolio profesional.">
                     Crafting secure, scalable architectures and exploring the frontiers of network defense. Welcome to my professional portfolio.
                 </p>
                 <div class="hero-cta" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                    <a href="#projects" class="btn btn-primary">View Work</a>
-                    <a href="assets/cv/cv-gmoran-c.pdf" target="_blank" class="btn btn-secondary">
+                    <a href="#projects" class="btn btn-primary" data-en="View Work" data-es="Ver Proyectos">View Work</a>
+                    <a href="assets/cv/cv-gmoran-c.pdf" target="_blank" class="btn btn-secondary" data-en="<i class='fas fa-file-pdf'></i> Resume" data-es="<i class='fas fa-file-pdf'></i> Curriculum">
                         <i class="fas fa-file-pdf"></i> Resume
                     </a>
                 </div>
@@ -64,26 +67,28 @@
     <!-- About Section -->
     <section id="about" class="section bg-alt">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up" data-en="About Me" data-es="Sobre Mí">About Me</h2>
             <div class="about-grid">
                 <div class="about-text" data-aos="fade-up" data-aos-delay="100">
-                    <p>
+                    <p data-en="I am Gabriel Morán Catón, currently studying a Bachelor of Computer Engineering at University Carlos III of Madrid (expected 2028). I thrive at the intersection of robust system design and proactive security implementation."
+                       data-es="Soy Gabriel Morán Catón, actualmente estudiante del Grado en Ingeniería Informática en la Universidad Carlos III de Madrid (promoción 2028). Prospero en la intersección del diseño de sistemas robustos y la implementación proactiva de ciberseguridad.">
                         I am Gabriel Morán Catón, currently studying a Bachelor of Computer Engineering at University Carlos III of Madrid (expected 2028). I thrive at the intersection of robust system design and proactive security implementation.
                     </p>
-                    <p>
+                    <p data-en="My background ranges from foundational software engineering to network protocols and hardware fundamentals (like RISC-V). I am actively pursuing my CompTIA Security+ (SY0-701) certification, diving deep into threat analysis, vulnerability management, and modern defense architectures."
+                       data-es="Mi experiencia abarca desde ingeniería de software hasta protocolos de red y fundamentos de hardware (ej. RISC-V). Actualmente preparo la certificación CompTIA Security+ (SY0-701), profundizando en análisis de amenazas, evaluación de vulnerabilidades y arquitecturas de defensa modernas.">
                         My background ranges from foundational software engineering to network protocols and hardware fundamentals (like RISC-V). I am actively pursuing my CompTIA Security+ (SY0-701) certification, diving deep into threat analysis, vulnerability management, and modern defense architectures.
                     </p>
                 </div>
                 <div class="about-cards">
                     <div class="info-card" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-wrapper"><i class="fas fa-server"></i></div>
-                        <h3>Engineer</h3>
-                        <p>Designing efficient and scalable systems from the ground up.</p>
+                        <h3 data-en="Engineer" data-es="Ingeniería">Engineer</h3>
+                        <p data-en="Designing efficient and scalable systems from the ground up." data-es="Diseñando sistemas eficientes y escalables desde cero.">Designing efficient and scalable systems from the ground up.</p>
                     </div>
                     <div class="info-card" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-wrapper"><i class="fas fa-shield-halved"></i></div>
-                        <h3>Defend</h3>
-                        <p>Implementing security best practices across network layers.</p>
+                        <h3 data-en="Defend" data-es="Defensa">Defend</h3>
+                        <p data-en="Implementing security best practices across network layers." data-es="Implementando mejores prácticas de seguridad en la red.">Implementing security best practices across network layers.</p>
                     </div>
                 </div>
             </div>
@@ -93,34 +98,34 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up">Core Competencies</h2>
+            <h2 class="section-title" data-aos="fade-up" data-en="Core Competencies" data-es="Competencias Clave">Core Competencies</h2>
             <div class="skills-wrapper">
                 
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="100">
-                    <h3><i class="fas fa-code"></i> Engineering</h3>
+                    <h3 data-en="<i class='fas fa-code'></i> Engineering" data-es="<i class='fas fa-code'></i> Desarrollo"><i class="fas fa-code"></i> Engineering</h3>
                     <div class="tags">
                         <span class="tag">Python</span>
                         <span class="tag">C/C++</span>
                         <span class="tag">SQL (Oracle)</span>
-                        <span class="tag">JavaScript/HTML/CSS</span>
+                        <span class="tag" data-en="JavaScript/HTML/CSS" data-es="JavaScript/HTML/CSS">JavaScript/HTML/CSS</span>
                         <span class="tag">Bash</span>
                         <span class="tag">RISC-V</span>
                     </div>
                 </div>
 
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="200">
-                    <h3><i class="fas fa-lock"></i> Security</h3>
+                    <h3 data-en="<i class='fas fa-lock'></i> Security" data-es="<i class='fas fa-lock'></i> Seguridad"><i class="fas fa-lock"></i> Security</h3>
                     <div class="tags">
-                        <span class="tag">Pen Testing</span>
-                        <span class="tag">Cryptography</span>
-                        <span class="tag">Network Defense</span>
-                        <span class="tag">Vulnerability Assessment</span>
-                        <span class="tag">Threat Intel</span>
+                        <span class="tag" data-en="Pen Testing" data-es="Pentesting">Pen Testing</span>
+                        <span class="tag" data-en="Cryptography" data-es="Criptografía">Cryptography</span>
+                        <span class="tag" data-en="Network Defense" data-es="Defensa de Redes">Network Defense</span>
+                        <span class="tag" data-en="Vulnerability Assessment" data-es="Análisis de Vulnerabilidades">Vulnerability Assessment</span>
+                        <span class="tag" data-en="Threat Intel" data-es="Inteligencia de Amenazas">Threat Intel</span>
                     </div>
                 </div>
 
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="300">
-                    <h3><i class="fas fa-screwdriver-wrench"></i> Tooling</h3>
+                    <h3 data-en="<i class='fas fa-screwdriver-wrench'></i> Tooling" data-es="<i class='fas fa-screwdriver-wrench'></i> Herramientas"><i class="fas fa-screwdriver-wrench"></i> Tooling</h3>
                     <div class="tags">
                         <span class="tag">Git</span>
                         <span class="tag">Docker</span>
@@ -137,7 +142,7 @@
     <!-- Projects Section -->
     <section id="projects" class="section bg-alt">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up">Selected Projects</h2>
+            <h2 class="section-title" data-aos="fade-up" data-en="Selected Projects" data-es="Proyectos Destacados">Selected Projects</h2>
             
             <div class="projects-grid">
                 
@@ -147,12 +152,13 @@
                             <i class="far fa-folder fa-2x text-primary"></i>
                             <a href="projects/ComputerAnalyzer.html" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3>Computer Analyzer</h3>
-                        <p>A comprehensive, cross-platform security management platform designed to democratize enterprise-grade log and USB monitoring for small and mid-sized organizations.</p>
+                        <h3 data-en="Computer Analyzer" data-es="Computer Analyzer">Computer Analyzer</h3>
+                        <p data-en="A comprehensive, cross-platform security management platform designed to democratize enterprise-grade log and USB monitoring for small and mid-sized organizations."
+                           data-es="Plataforma integral y multiplataforma de gestión de ciberseguridad, diseñada para democratizar el registro y monitoreo de USBs para PyMEs.">A comprehensive, cross-platform security management platform designed to democratize enterprise-grade log and USB monitoring for small and mid-sized organizations.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Scapy</span>
-                            <span>Networking</span>
+                            <span data-en="Networking" data-es="Redes">Networking</span>
                         </div>
                     </div>
                 </div>
@@ -163,11 +169,12 @@
                             <i class="far fa-folder fa-2x text-primary"></i>
                             <a href="projects/IntegratedAttackSurface.html" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <h3>Integrated Attack Surface</h3>
-                        <p>An active security research project focused on unifying vulnerability identification, infrastructure mapping, and threat intel into a single pane of glass.</p>
+                        <h3 data-en="Integrated Attack Surface" data-es="Integrated Attack Surface">Integrated Attack Surface</h3>
+                        <p data-en="An active security research project focused on unifying vulnerability identification, infrastructure mapping, and threat intel into a single pane of glass."
+                           data-es="Proyecto activo de investigación de seguridad centrado en unificar la identificación de vulnerabilidades, el mapeo de infraestructura y la inteligencia de amenazas.">An active security research project focused on unifying vulnerability identification, infrastructure mapping, and threat intel into a single pane of glass.</p>
                         <div class="project-tags">
                             <span>Java</span>
-                            <span>Cryptography</span>
+                            <span data-en="Cryptography" data-es="Criptografía">Cryptography</span>
                         </div>
                     </div>
                 </div>
@@ -178,8 +185,9 @@
                             <i class="far fa-folder fa-2x text-primary"></i>
                             <a href="#" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Portfolio Design</h3>
-                        <p>A premium, responsive digital portfolio engineered from scratch using modern web standards, featuring fluid animations and a modular CSS architecture.</p>
+                        <h3 data-en="Portfolio Design" data-es="Diseño del Portafolio">Portfolio Design</h3>
+                        <p data-en="A premium, responsive digital portfolio engineered from scratch using modern web standards, featuring fluid animations and a modular CSS architecture."
+                           data-es="Un portafolio digital premium y responsive desarrollado desde cero usando estándares web modernos, con animaciones fluidas y arquitectura CSS modular.">A premium, responsive digital portfolio engineered from scratch using modern web standards, featuring fluid animations and a modular CSS architecture.</p>
                         <div class="project-tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
@@ -191,7 +199,7 @@
             </div>
             
             <div class="center-btn" data-aos="fade-up">
-                <a href="https://github.com/gmoran-c" target="_blank" class="btn btn-secondary">
+                <a href="https://github.com/gmoran-c" target="_blank" class="btn btn-secondary" data-en="Visit GitHub <i class='fab fa-github ml-2'></i>" data-es="Visitar GitHub <i class='fab fa-github ml-2'></i>">
                     Visit GitHub <i class="fab fa-github ml-2"></i>
                 </a>
             </div>
@@ -201,26 +209,28 @@
     <!-- Education Section -->
     <section id="education" class="section">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up">Education</h2>
+            <h2 class="section-title" data-aos="fade-up" data-en="Education" data-es="Educación">Education</h2>
             <div class="timeline">
                 
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">August 2024 - May 2028</span>
-                        <h3>Bachelor of Computer Engineering</h3>
-                        <h4>University Carlos III of Madrid</h4>
-                        <p>Focusing on system architecture, algorithms, and advanced networking infrastructure. (78/240 credits)</p>
+                        <span class="timeline-date" data-en="August 2024 - May 2028" data-es="Agosto 2024 - Mayo 2028">August 2024 - May 2028</span>
+                        <h3 data-en="Bachelor of Computer Engineering" data-es="Grado en Ingeniería Informática">Bachelor of Computer Engineering</h3>
+                        <h4 data-en="University Carlos III of Madrid" data-es="Universidad Carlos III de Madrid">University Carlos III of Madrid</h4>
+                        <p data-en="Focusing on system architecture, algorithms, and advanced networking infrastructure. (78/240 credits)"
+                           data-es="Especialización en arquitectura de sistemas, algoritmos e infraestructura de redes avanzada. (78/240 créditos)">Focusing on system architecture, algorithms, and advanced networking infrastructure. (78/240 credits)</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Expected August 2026</span>
-                        <h3>CompTIA Security+ (SY0-701)</h3>
-                        <h4>In Progress</h4>
-                        <p>Threats, vulnerabilities, malware mitigation, security architecture (cloud, IoT), and incident response.</p>
+                        <span class="timeline-date" data-en="Expected August 2026" data-es="Esperado Agosto 2026">Expected August 2026</span>
+                        <h3 data-en="CompTIA Security+ (SY0-701)" data-es="CompTIA Security+ (SY0-701)">CompTIA Security+ (SY0-701)</h3>
+                        <h4 data-en="In Progress" data-es="En Curso">In Progress</h4>
+                        <p data-en="Threats, vulnerabilities, malware mitigation, security architecture (cloud, IoT), and incident response."
+                           data-es="Análisis de amenazas, mitigación de malware, arquitecturas de seguridad (nube, IoT) y respuesta a incidentes.">Threats, vulnerabilities, malware mitigation, security architecture (cloud, IoT), and incident response.</p>
                     </div>
                 </div>
 
@@ -231,23 +241,24 @@
     <!-- Contact Section -->
     <section id="contact" class="section bg-alt">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+            <h2 class="section-title" data-aos="fade-up" data-en="Get in Touch" data-es="Contáctame">Get in Touch</h2>
             <div class="contact-box" data-aos="zoom-in">
-                <p class="contact-text">
+                <p class="contact-text" data-en="I am currently open to new opportunities, collaborations, and conversations regarding software engineering and cybersecurity. My inbox is always open."
+                   data-es="Actualmente estoy abierto a nuevas oportunidades, colaboraciones y charlas sobre ingeniería de software y ciberseguridad. Mi bandeja de entrada siempre está abierta.">
                     I am currently open to new opportunities, collaborations, and conversations regarding software engineering and cybersecurity. My inbox is always open.
                 </p>
                 <div class="contact-methods">
                     <a href="mailto:gabriel.facility459@passinbox.com" class="method-card">
                         <i class="fas fa-envelope"></i>
-                        <span>Email</span>
+                        <span data-en="Email" data-es="Correo">Email</span>
                     </a>
                     <a href="https://github.com/gmoran-c" target="_blank" class="method-card">
                         <i class="fab fa-github"></i>
-                        <span>GitHub</span>
+                        <span data-en="GitHub" data-es="GitHub">GitHub</span>
                     </a>
                     <a href="https://www.linkedin.com/in/gmoran-c/" target="_blank" class="method-card">
                         <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
+                        <span data-en="LinkedIn" data-es="LinkedIn">LinkedIn</span>
                     </a>
                 </div>
             </div>
@@ -257,8 +268,8 @@
     <!-- Footer -->
     <footer>
         <div class="section-container">
-            <p>Designed and Built by <strong>Gabriel Morán</strong></p>
-            <p class="copyright">&copy; 2026 Gabriel Morán. All Rights Reserved.</p>
+            <p data-en="Designed and Built by <strong>Gabriel Morán</strong>" data-es="Diseñado y Desarrollado por <strong>Gabriel Morán</strong>">Designed and Built by <strong>Gabriel Morán</strong></p>
+            <p class="copyright" data-en="&copy; 2026 Gabriel Morán. All Rights Reserved." data-es="&copy; 2026 Gabriel Morán. Todos los derechos reservados.">&copy; 2026 Gabriel Morán. All Rights Reserved.</p>
         </div>
     </footer>
 

@@ -24,7 +24,10 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="../index.html" class="logo"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <a href="../index.html" class="logo" data-en="<i class='fas fa-arrow-left'></i> Back to Portfolio" data-es="<i class='fas fa-arrow-left'></i> Volver al Portafolio"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <div class="nav-menu" style="margin-left: auto;">
+                <button id="lang-toggle" class="btn btn-secondary">EN / ES</button>
+            </div>
         </div>
     </nav>
 
@@ -34,9 +37,9 @@
         <div class="section-container">
             <div class="hero-content" style="text-align: center;">
                 <h1 class="hero-name" data-aos="fade-up" style="font-size: 4rem;">Computer Analyzer</h1>
-                <h2 class="hero-title" data-aos="fade-up" data-aos-delay="100" style="color: var(--accent);">Enterprise-Grade SIEM Alternative for SMEs</h2>
+                <h2 class="hero-title" data-aos="fade-up" data-aos-delay="100" style="color: var(--accent);" data-en="Enterprise-Grade SIEM Alternative for SMEs" data-es="Alternativa SIEM de Grado Empresarial para PyMEs">Enterprise-Grade SIEM Alternative for SMEs</h2>
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="200" style="justify-content: center;">
-                    <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> View Repository</a>
+                    <a href="#" class="btn btn-primary" data-en="<i class='fab fa-github'></i> View Repository" data-es="<i class='fab fa-github'></i> Ver Repositorio"><i class="fab fa-github"></i> View Repository</a>
                 </div>
             </div>
         </div>
@@ -45,13 +48,15 @@
     <!-- Overview Section -->
     <section class="section bg-alt" style="padding: 80px 0;">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;">Project Overview</h2>
+            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;" data-en="Project Overview" data-es="Resumen del Proyecto">Project Overview</h2>
             <div class="about-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: left;">
                 <div class="about-text" data-aos="fade-up" data-aos-delay="100">
-                    <p>
+                    <p data-en="<strong>ComputerAnalyzer</strong> is a comprehensive, cross-platform security monitoring and management solution. My vision for this project is to democratize cybersecurity so that any small or mid-sized organization (SME) can protect itself with the same capabilities as a large corporation, without the massive cost of enterprise solutions like Splunk or CrowdStrike."
+                       data-es="<strong>ComputerAnalyzer</strong> es una solución integral y multiplataforma de monitoreo y gestión de seguridad. Mi visión es democratizar la ciberseguridad para que cualquier pequeña o mediana empresa (PyME) pueda protegerse con las mismas capacidades que una gran corporación, sin el costo masivo de software empresarial como Splunk.">
                         <strong>ComputerAnalyzer</strong> is a comprehensive, cross-platform security monitoring and management solution. My vision for this project is to democratize cybersecurity so that any small or mid-sized organization (SME) can protect itself with the same capabilities as a large corporation, without the massive cost of enterprise solutions like Splunk or CrowdStrike.
                     </p>
-                    <p>
+                    <p data-en="From a single interface, security teams can monitor local and remote systems, analyze suspicious activity, enforce access policies, and respond to threats in real time. The platform is designed to operate strictly within legal/ethical boundaries, focusing on proportional data collection and compliance (including preparing for GDPR and the EU AI Act)."
+                       data-es="Desde una única interfaz, los equipos pueden monitorear sistemas locales y remotos, analizar actividades sospechosas, aplicar políticas y responder en tiempo real. La plataforma está diseñada para operar estrictamente dentro de los límites legales y éticos (enfocada en el cumplimiento de la GDPR y la Ley de IA de la UE).">
                         From a single interface, security teams can monitor local and remote systems, analyze suspicious activity, enforce access policies, and respond to threats in real time. The platform is designed to operate strictly within legal/ethical boundaries, focusing on proportional data collection and compliance (including preparing for GDPR and the EU AI Act).
                     </p>
                 </div>
@@ -62,35 +67,26 @@
     <!-- Tech Stack -->
     <section class="section" style="padding: 80px 0;">
         <div class="section-container">
-            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;">Current Modules</h2>
+            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 2rem;" data-en="Current Modules" data-es="Módulos Actuales">Current Modules</h2>
             <div class="skills-wrapper" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
                 
                 <div class="info-card" data-aos="zoom-in" data-aos-delay="100" style="text-align: center;">
                     <div class="icon-wrapper" style="margin: 0 auto 1rem auto;"><i class="fas fa-file-alt"></i></div>
                     <h3>LogAnalyzer</h3>
-                    <p style="margin-top: 10px;">Defines unauthorized access hours and automatically alerts on cross-platform policy violations via SSH.</p>
+                    <p style="margin-top: 10px;" data-en="Defines unauthorized access hours and automatically alerts on cross-platform policy violations via SSH." data-es="Define horas de acceso no autorizadas y alerta automáticamente sobre violaciones de políticas multiplataforma vía SSH.">Defines unauthorized access hours and automatically alerts on cross-platform policy violations via SSH.</p>
                 </div>
 
                 <div class="info-card" data-aos="zoom-in" data-aos-delay="200" style="text-align: center;">
                     <div class="icon-wrapper" style="margin: 0 auto 1rem auto;"><i class="fab fa-usb"></i></div>
                     <h3>UsbAnalyzer</h3>
-                    <p style="margin-top: 10px;">Tracks device activity across platforms, allowing administrators to define strict whitelists of authorized USBs.</p>
+                    <p style="margin-top: 10px;" data-en="Tracks device activity across platforms, allowing administrators to define strict whitelists of authorized USBs." data-es="Rastrea la actividad de dispositivos en varias plataformas, permitiendo definir listas blancas estrictas de USBs autorizados.">Tracks device activity across platforms, allowing administrators to define strict whitelists of authorized USBs.</p>
                 </div>
 
                 <div class="info-card" data-aos="zoom-in" data-aos-delay="300" style="text-align: center;">
                     <div class="icon-wrapper" style="margin: 0 auto 1rem auto;"><i class="fas fa-robot"></i></div>
-                    <h3>Future AI Integration</h3>
-                    <p style="margin-top: 10px;">Roadmap includes AI-powered threat scoring, ImageAnalyzer anomaly detection, and Network Topology Mapping.</p>
+                    <h3 data-en="Future AI Integration" data-es="Futura Integración IA">Future AI Integration</h3>
+                    <p style="margin-top: 10px;" data-en="Roadmap includes AI-powered threat scoring, ImageAnalyzer anomaly detection, and Network Topology Mapping." data-es="La hoja de ruta incluye puntuación de amenazas por IA, detección de anomalías por imagen y un mapeador visual de topología de red.">Roadmap includes AI-powered threat scoring, ImageAnalyzer anomaly detection, and Network Topology Mapping.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Image Placeholder -->
-    <section class="section bg-alt" style="padding: 80px 0;">
-        <div class="section-container">
-            <div data-aos="fade-up" style="width: 100%; height: 400px; background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: var(--radius-soft); display: flex; align-items: center; justify-content: center; color: var(--text-secondary);">
-                <i class="fas fa-image fa-3x" style="margin-right: 15px;"></i> Placeholder for Dashboard Screenshot
             </div>
         </div>
     </section>
@@ -98,14 +94,16 @@
     <!-- Footer -->
     <footer>
         <div class="section-container">
-            <p>Designed and Built by <strong>Gabriel Morán</strong></p>
+            <p data-en="Designed and Built by <strong>Gabriel Morán</strong>" data-es="Diseñado y Desarrollado por <strong>Gabriel Morán</strong>">Designed and Built by <strong>Gabriel Morán</strong></p>
         </div>
     </footer>
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            if(!window.AOS) return;
             AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
         });
     </script>

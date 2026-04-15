@@ -115,4 +115,49 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 6. Language Translation Engine
+    const langToggleBtn = document.getElementById('lang-toggle');
+    if (langToggleBtn) {
+        // Load preference from localStorage or default to English
+        let currentLang = localStorage.getItem('portfolio_lang') || 'en';
+        
+        // Function to apply language to all translatable elements
+        const applyLanguage = (lang, useTransition = true) => {
+            const translatableElements = document.querySelectorAll('[data-en][data-es]');
+            
+            // Set button text
+            langToggleBtn.innerText = lang === 'en' ? 'EN / ES' : 'ES / EN';
+
+            if (useTransition) {
+                // Add fade-out class to all elements
+                translatableElements.forEach(el => el.classList.add('lang-fading'));
+                
+                // Wait for the CSS transition (0.3s) to finish before swapping text
+                setTimeout(() => {
+                    translatableElements.forEach(el => {
+                        el.innerHTML = el.getAttribute(`data-${lang}`);
+                        el.classList.remove('lang-fading');
+                    });
+                }, 300);
+            } else {
+                // Initial load, no transition needed
+                translatableElements.forEach(el => {
+                    el.classList.add('lang-text');
+                    el.innerHTML = el.getAttribute(`data-${lang}`);
+                });
+            }
+        };
+
+        // Apply initially
+        applyLanguage(currentLang, false);
+
+        // Toggle on click
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            localStorage.setItem('portfolio_lang', currentLang);
+            applyLanguage(currentLang, true);
+        });
+    }
+
 });

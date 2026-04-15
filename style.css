@@ -561,6 +561,35 @@ footer strong {
 }
 
 /* =========================================
+   LANGUAGE TOGGLE & TRANSITION
+========================================= */
+.lang-text {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lang-fading {
+    opacity: 0 !important;
+}
+
+#lang-toggle {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-round);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    margin-left: auto; /* Pushes it to the right in nav */
+}
+
+#lang-toggle:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+/* =========================================
    RESPONSIVE DESIGN
 ========================================= */
 @media (max-width: 900px) {
