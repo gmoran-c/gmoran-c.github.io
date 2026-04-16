@@ -14,20 +14,6 @@ in computer engineering and cybersecurity.
 
 ---
 
-## 📁 Project Structure
-
-​```
-gmoran-c.github.io/
-├── index.html
-├── style.css
-├── main.js
-└── assets/
-    ├── img/
-    └── cv/
-​```
-
----
-
 ## 📌 Sections
 
 - About Me
