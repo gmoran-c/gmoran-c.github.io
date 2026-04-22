@@ -1,29 +1,45 @@
-# 👤 Gabriel Morán — Portfolio
+# Gabriel Morán
 
-Personal website showcasing my projects, skills and experience
-in computer engineering and cybersecurity.
+### Computer Engineer & Cybersecurity Specialist
 
-🌐 **Live:** https://gmoran-c.github.io
+A premium, minimalist digital presence focused on system architecture and network defense, emphasizing clarity, performance, and responsive design.
 
----
-
-## 🛠️ Built With
-
-- HTML5, CSS3, JavaScript
-- Font Awesome, AOS.js
+[**Visit Live Experience**](https://gmoran-c.github.io)
 
 ---
 
-## 📌 Sections
+## The Vision
 
-- About Me
-- Skills
-- Projects
-- Education & Certifications
-- Contact
+To create a seamless, high-fidelity portfolio that mirrors the precision of modern engineering. Every pixel and interaction is crafted to reflect a commitment to secure, scalable, and elegant solutions.
 
 ---
 
-## 📄 License
+## Tech Stack
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+*   **Core:** HTML5, CSS3 (Modern Modular Architecture), JavaScript (ES6+)
+*   **Experience:** AOS.js for fluid motion, Font Awesome for iconography
+*   **Typography:** SF Pro Text & SF Pro Display
+
+---
+
+## Architecture
+
+```text
+gmoran-c.github.io/
+├── index.html     # Core Structure
+├── style.css      # Premium Visuals & Glassmorphism
+├── main.js       # Dynamic Interactions & Translation Engine
+└── assets/       # High-fidelity Resources
+```
+
+---
+
+## Core Focus
+
+*   **Engineering:** Systems design and hardware fundamentals.
+*   **Security:** Proactive defense and vulnerability management.
+*   **Experience:** Smooth, responsive, and internationalized (EN/ES) interface.
+
+---
+
+&copy; 2026 Gabriel Morán. Licensed under MIT.

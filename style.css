@@ -1,5 +1,5 @@
 /* =========================================
-   PREMIUM "APPLE PRO" AESTHETIC
+   PREMIUM MINIMALIST VISUALS
 ========================================= */
 :root {
     /* Color Palette - Dark Mode */
@@ -17,7 +17,8 @@
     --border-hover: rgba(255, 255, 255, 0.15);
 
     /* Typography */
-    --font-main: -apple-system, BlinkMacSystemFont, 'Inter', "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-main: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-header: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     /* Effects */
     --radius-soft: 16px;
@@ -57,6 +58,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--font-header);
     color: var(--text-primary);
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -366,68 +368,6 @@ ul {
     padding: 0.4rem 1rem;
     border-radius: var(--radius-round);
     font-size: 0.85rem;
-    font-weight: 500;
-}
-
-/* =========================================
-   PROJECTS SECTION
-========================================= */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-soft);
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    transition: var(--transition-smooth);
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--border-hover);
-    box-shadow: var(--shadow-soft);
-}
-
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.project-link {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-}
-
-.project-link:hover {
-    color: var(--text-primary);
-}
-
-.project-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-.project-card p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
-    flex-grow: 1;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    color: var(--text-secondary);
-    font-size: 0.8rem;
     font-weight: 500;
 }
 
