@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const words = [
             "System Architecture.",
             "Cybersecurity.",
-            "Software Engineering."
+            "Computer Science and Engineering."
         ];
         
         let wait = 2500;
